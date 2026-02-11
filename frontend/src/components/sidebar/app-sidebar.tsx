@@ -14,6 +14,7 @@ import { User, Sparkles, Settings } from "lucide-react";
 import Link from "next/link";
 import SidebarMenuItems from "./sidebar-menu-items";
 import MobileSidebarClose from "./mobile-sidebar-close";
+import Credits from "./credits";
 
 export default function AppSidebar() {
     return (
@@ -44,6 +45,7 @@ export default function AppSidebar() {
             </SidebarContent>
             <SidebarFooter className="bg-muted/30 border-t p-3">
             <div className="mb-3 flex-w-full items-center justify-center gap-2 text-xs">
+                <Credits/>
                 <UserButton
                 variant="outline"
                 className="border-muted-foreground/20 hover:border-primary/50 w-full transition-colors"
